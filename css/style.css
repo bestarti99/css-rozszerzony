@@ -156,3 +156,54 @@ input[type="text"] {
 #transitions .hovered:hover {
     background-color: green;
 }
+
+/* WŁAŚCIWOŚCI TŁA */
+#background {
+    width: 1000px;
+    height: 400px;
+    margin: 10px auto;
+/*
+    background-image: url('https://www.lamborghini.com/en-en/sites/en-en/files/DAM/it/models_gateway/blocks/special.png');
+         niepowtarzanie obrazków 
+    background-repeat: no-repeat;
+    background-position: center center;
+*/
+    
+    background: url('https://www.lamborghini.com/en-en/sites/en-en/files/DAM/it/models_gateway/blocks/special.png') center center no-repeat;
+}
+
+#overflow {
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    overflow: scroll;
+}
+
+#overflow:hover {
+    overflow: visible;    
+}
+
+#overflow_with_float {
+    background-color: black;
+}
+
+#overflow_with_float {
+    background-color: black;
+}
+
+#box_sizing {
+    margin-top: 100px;
+    width: 300px;
+    height: 300px;
+    background-color: beige;
+    padding: 50px;
+    border: 10px solid green;
+    box-sizing: border-box;
+}
+
+@media all and (min-width: 800px) {
+    #box_sizing {
+        width: 150px;
+        height: 150px;
+    }
+}
