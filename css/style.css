@@ -1,0 +1,56 @@
+/* PSEUDOELEMENTY */
+#before .pierwszy::before {
+/*    content: - element obowiązkowy w  pseudoklasach ::before ::after */
+    content: "przed elementem "; 
+    color: red;
+}
+
+/* wstawienie akapitu po paragrafie */
+#after .drugi::after {
+    /*    content: - element obowiązkowy w  pseudoklasach ::before ::after */
+    content:  " po elemencie";
+    color: green;
+}
+
+/* stylowanie pierwszej litery */
+#first-letter p::first-letter {
+    color: red;
+    font-size: 30px;   
+}
+
+/* stylowanie pierwszej lini */
+#first-line p::first-line {
+    background-color: yellow;
+    
+}
+
+/* PSEUDOKLASY */
+#link a:link {
+    color: orange;
+    }
+
+#link a:visited {
+    color: pink;
+    }
+
+/* zmiana koloru tła dla naciśnięciu lewego przycisku myszy */
+#link a:active {
+    background-color: yellow;
+}
+
+:target {
+    color: orange;
+}
+
+/* zmiana koloru po najechaniu */
+#before:hover {
+    color: red;
+}
+
+#focus input:focus {
+    border: 5px solid green;
+}
+
+#lang p:lang(en) {
+    background-color: aqua;
+}
