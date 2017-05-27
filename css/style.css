@@ -54,3 +54,78 @@
 #lang p:lang(en) {
     background-color: aqua;
 }
+
+
+/* INNE PSEUDO KLASY */
+#first-child .lista li:first-child {
+    background-color: green;    
+}
+
+#first-child .lista li:last-child {
+    background-color: pink;    
+}
+
+div span:only-child {
+    background-color: skyblue;
+}
+
+div:empty {
+    height: 100px;
+    width: 100px;
+    background-color: crimson;
+}
+
+/* :nth-child / :nth-last-child */
+#nth-childs ul li:nth-child(3) {
+    background-color: blue;
+    
+}
+
+/* elementy nieparzyste - nadpisze rónież element 3*/
+#nth-childs ul li:nth-child(even) {
+    background-color: green;
+    
+}
+
+/* elementy parzyste */
+#nth-childs ul li:nth-child(odd) {
+    background-color: pink;
+    
+}
+
+/* liczy co ile elementów 3n i od któego zaczynamy +2 */
+#nth-childs ul li:nth-child(3n+2) {
+    font-size: 30px;
+}
+
+/* liczy tak samo od końca */
+#nth-last-childs ul li:nth-last-child(3n+2) {
+    font-size: 30px;
+    background-color: pink;
+}
+
+
+/* SELEKTORY ATRYBUTÓW */
+input[type="text"] {
+    border: 10px solid grey;
+}
+
+#attribiutes a[title~="opis"] {
+    font-size: 40px;
+}
+
+#attribiutes a[title*="link"] {
+    font-size: 40px;
+    background-color: yellow;
+}
+
+#attr a[title^="opis"] {
+    font-size: 25px;
+    background-color: grey;
+}
+
+#attr a[title$="opis"] {
+    font-size: 30px;
+    background-color: red;
+}
+
